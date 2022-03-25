@@ -1,0 +1,21 @@
+@import "../../scss/index.scss";
+
+.layout-client {
+  &__header {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 4px 3px rgba(250, 250, 250, 0.1);
+    overflow: hidden;
+    background-color: $background-dark-client !important;
+    border-bottom: 2px solid $primary-color-light-dark !important;
+  }
+  &__content {
+  }
+  &__footer {
+    bottom: 0;
+    background-color: $background-dark-light !important;
+    border-top: 3px solid $primary-color-light-dark;
+  }
+}

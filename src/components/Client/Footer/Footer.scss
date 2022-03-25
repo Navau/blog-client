@@ -1,0 +1,51 @@
+@import "../../../scss/index.scss";
+
+.footer {
+  background-color: $background-dark-light !important;
+  border-top: 3px solid $primary-color;
+
+  &__copyright {
+    margin-top: 30px;
+
+    .ant-col {
+      color: $primary-color-light;
+
+      &:last-of-type {
+        text-align: right;
+      }
+    }
+  }
+  &__social {
+    margin-top: 100px;
+  }
+
+  &__logo {
+    margin-top: 100px;
+  }
+
+  .team-info {
+    .ant-list-item {
+      //   .ant-list-item-meta-avatar {
+      //   }
+      .ant-list-item-meta-title {
+        color: $primary-color-light;
+        font-weight: bold;
+      }
+      .ant-list-item-meta-description {
+        color: $primary-color-light-dark;
+        font-weight: bold;
+      }
+    }
+  }
+
+  h1 {
+    color: $font-light;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}

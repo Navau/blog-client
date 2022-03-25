@@ -1,0 +1,97 @@
+@import "../../../scss/index.scss";
+
+.sign-in {
+  background-image: url("../../../assets/img/png/poster3.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  height: 100vh;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: $background-dark;
+    opacity: 0.65;
+    z-index: 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 5;
+
+    &__title {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      letter-spacing: 20px;
+      padding: 60px 20px;
+      font-size: 72px;
+      font-weight: bold;
+      color: $font-light;
+    }
+
+    &__tabs {
+      background-color: $background-light;
+
+      .ant-tabs {
+        width: 90vw;
+
+        @media (min-width: $media-breackpoint-up-lg) {
+          width: auto;
+        }
+      }
+
+      .ant-tabs-nav-container {
+        height: 80px !important;
+      }
+
+      .ant-tabs-tab {
+        width: 100%;
+        height: 60px !important;
+        justify-content: center;
+        font-size: 0em + 19px / $font-size;
+        border-top: 4px solid $border-grey !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+
+        @media (min-width: $media-breackpoint-up-lg) {
+          width: 220px;
+          font-size: 0em + 23px / $font-size;
+        }
+
+        &:hover {
+          color: $font-grey-dark;
+        }
+
+        &:before {
+          content: none;
+        }
+
+        span {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .ant-tabs-tab-active {
+        color: $primary-color !important;
+        border-top: 4px solid $primary-color !important;
+        border-radius: 0 !important;
+        border-right: 0 !important;
+        border-left: 0 !important;
+      }
+
+      .ant-tabs-content {
+        padding: 0 16px 16px 16px;
+        text-align: center;
+        width: 100% !important;
+      }
+    }
+  }
+}

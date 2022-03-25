@@ -1,0 +1,21 @@
+@import "../../../scss/index.scss";
+
+.menu-sider {
+  background-color: $background-dark-client !important;
+  position: fixed;
+  left: 0;
+  top: 62px;
+  height: calc(100vh - 62px);
+  overflow: auto;
+
+  .ant-menu {
+    background-color: $background-dark-client !important;
+
+    .ant-menu-item {
+      background-color: $background-dark-client !important;
+    }
+    .ant-menu-item-selected {
+      background-color: $primary-color-dark-light !important;
+    }
+  }
+}

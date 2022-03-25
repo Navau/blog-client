@@ -1,0 +1,41 @@
+@import "../../../scss/index.scss";
+
+.menu-top-client {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: $background-dark-client !important;
+  border: 0 !important;
+
+  li {
+    border: 0 !important;
+
+    a {
+      color: $font-light !important;
+      font-weight: bold;
+      &:hover {
+        color: $primary-color-light !important;
+      }
+    }
+  }
+
+  &__logo {
+    left: 0 !important;
+    width: 150px;
+    padding: 5px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .ant-menu-submenu {
+    svg {
+      color: $font-light;
+      font-weight: bold;
+      font-size: 26px;
+      &:hover {
+        color: $primary-color-light;
+      }
+    }
+  }
+}
