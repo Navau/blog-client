@@ -66,7 +66,7 @@ function Post(props) {
           <span>{month}</span>
         </div>
 
-        <List.Item.Meta title={post.title} style={{ color: "white" }} />
+        <List.Item.Meta title={post.title} description={`Sprint: ${post.sprint}`} style={{ color: "white" }} />
       </List.Item>
     </Link>
   );

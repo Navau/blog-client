@@ -11,15 +11,17 @@ export default function Blog() {
 
   return (
     <Row>
-      <Col md={4}></Col>
-      <Col md={16}>
+      <Col md={3}>
+        <h1>MENU NAV</h1>
+      </Col>
+      <Col md={18}>
         {url ? (
           <PostInfo url={url} />
         ) : (
           <PostListWeb location={location} navigate={navigate} />
         )}
       </Col>
-      <Col md={4}></Col>
+      <Col md={3}></Col>
     </Row>
   );
 }

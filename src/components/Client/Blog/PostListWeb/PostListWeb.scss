@@ -1,15 +1,21 @@
 @import "../../../../scss/index.scss";
 
 .post-list-web {
+  background-color: rgba(0,0,0,0.1);
+  padding: 50px;
   margin: 50px 0;
   > h1 {
     text-align: center;
-    color: $font-light;
-    margin: 50px 0;
+    font-size: 80px;
+    color: $primary-color-light;
   }
 
   .post {
     color: $font-light;
+
+    &:hover{
+      background-color: rgb(0, 0, 0,0.15);
+    }
 
     a {
       margin: 0;
@@ -28,7 +34,14 @@
     }
 
     .ant-list-item-meta-title {
-      color: $font-light !important;
+      color: $primary-color-light;
+      font-size: 16px;
+      &:hover {
+        color: $primary-color-dark;
+      }
+    }
+    .ant-list-item-meta-description{
+      color: $font-grey-light;
       font-size: 16px;
       &:hover {
         color: $primary-color-dark;
